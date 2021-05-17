@@ -1,0 +1,70 @@
+.divcontenido{
+    margin-bottom: 100px;
+    overflow-y: auto !important;
+    height: calc( 100vh - 200px ) !important;
+    overflow-x: hidden !important;
+}
+
+/* Tamaño del scroll */
+.divcontenido::-webkit-scrollbar {
+  width: 8px;
+}
+
+ /* Estilos barra (thumb) de scroll */
+.divcontenido::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.divcontenido::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.divcontenido::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ /* Estilos track de scroll */
+.divcontenido::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+.divcontenido::-webkit-scrollbar-track:hover, 
+.divcontenido::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+
+#pantalla19_info1:hover > #pantalla19_img1, #pantalla19_info2:hover > #pantalla19_img2, #pantalla19_info3:hover > #pantalla19_img3, #pantalla19_info4:hover > #pantalla19_img4, #pantalla19_info5:hover > #pantalla19_img5{
+  visibility: hidden;
+  display: none !important;
+}
+#pantalla19_info1:hover,#pantalla19_info2:hover,#pantalla19_info3:hover,#pantalla19_info4:hover,#pantalla19_info5:hover{
+  background: #D8D8D8;
+}
+
+#pantalla19_info1:hover > #pantalla19_text1::after{
+  content: 'Conocer la composición de un combustible permite determinar los parámetros característicos estequiométricos de la reacción de combustión, e identificar si existen sustancias que puedan generar contaminación o nocividad de los productos de reacción.';
+}
+#pantalla19_info2:hover > #pantalla19_text2::after{
+  content: 'Es la cantidad de energía desprendida en la reacción de combustión y de acuerdo como se expresa el estado del agua en los productos de reacción se puede dividir en poder calorífico superior (PCS – estado líquido) y poder calorífico inferior (PCI – estado sólido).';
+}
+#pantalla19_info3:hover > #pantalla19_text3::after{
+  content: 'Tiene gran importancia en los combustibles líquidos a efectos de su almacenamiento y transporte. Su determinación es experimental y los valores típicos se encuentran tabulados para los distintos combustibles industriales líquidos.';
+}
+#pantalla19_info4:hover > #pantalla19_text4::after{
+  content: 'Generalmente se determina experimentalmente y para el caso de los combustibles gaseosos se utiliza la densidad relativa al aire. En la práctica es muy importante conocer este parámetro para saber si el gas combustible se acumula en el techo o en el suelo, en caso de una fuga en un local cerrado.';
+}
+#pantalla19_info5:hover > #pantalla19_text5::after{
+  content: 'Esta propiedad es característica a los combustibles gaseosos y establece la proporción de gas y aire necesaria para que se produzca la combustión, indicando un límite superior y uno inferior.';
+}
+
+.triangulo{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-bottom: 100px solid green;
+  border-right: 50px solid transparent;
+}
