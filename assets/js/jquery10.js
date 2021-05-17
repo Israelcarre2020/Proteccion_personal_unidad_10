@@ -1,6 +1,8 @@
 $(document).ready(pantalla7_canvas);
 $(document).ready(pantalla30_canvas);
 $(document).ready(pantalla21_img);
+
+
 function pantalla5_info(num){
   var texto = "";
   $("#pantalla5_info1").html(texto);
@@ -14,7 +16,7 @@ function pantalla5_info(num){
               <li><span class="font-weight-bold">Indicación de peligro</span></li>
             </ul>
             <div class="d-flex justify-content-center">
-              <button class="btn btn-primary" data-toggle="modal" data-target="#pantalla5_modal1"><img src="assets/img/botongeneral.png" style="width: 40px; position: relative; bottom: 0px; left: 0px;">Ver imagen</button>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#pantalla5_modal1">Ver imagen</button>
             </div>
             `;
     $("#pantalla5_info1").html(texto);
@@ -40,15 +42,15 @@ function ver_mas(num){
 function pantalla7_canvas() {
   if ($("#content").width() <= 600) {
     var canvas = new fabric.Canvas('pantalla7_canvas');
-    var imgElement = '../img/explosivos.png';
-    var imgElement2 = '../img/corrosivometales.png'; 
-    var imgElement3 = '../img/liquidosinflamables.png';
-    var imgElement4 = '../img/peligroaspiracion.png';
-    var imgElement5 = '../img/toxicidadaguda.png';
-    var imgElement6 = '../img/liquidoscomburentes.png';
-    var imgElement7 = '../img/medioambiente.png';
-    var imgElement8 = '../img/irritacioncutanea.png';
-    var imgElement9 = '../img/gases.png';
+    var imgElement = "/assets/img/explosivos.png";
+    var imgElement2 = '/assets/img/corrosivometales.png'; 
+    var imgElement3 = 'assets/img/liquidosinflamables.png';
+    var imgElement4 = 'assets/img/peligroaspiracion.png';
+    var imgElement5 = 'assets/img/toxicidadaguda.png';
+    var imgElement6 = 'assets/img/liquidoscomburentes.png';
+    var imgElement7 = 'assets/img/medioambiente.png';
+    var imgElement8 = 'assets/img/irritacioncutanea.png';
+    var imgElement9 = 'assets/img/gases.png';
     fabric.Image.fromURL(imgElement, function(oImg) {
         oImg.left=0;
         oImg.top=0;
@@ -278,15 +280,15 @@ function pantalla7_canvas() {
     });
   }else{
     var canvas = new fabric.Canvas('pantalla7_canvas');
-    var imgElement = '../img/explosivos.png';
-    var imgElement2 = '../img/corrosivometales.png'; 
-    var imgElement3 = '../img/liquidosinflamables.png';
-    var imgElement4 = '../img/peligroaspiracion.png';
-    var imgElement5 = '../img/toxicidadaguda.png';
-    var imgElement6 = '../img/liquidoscomburentes.png';
-    var imgElement7 = '../img/medioambiente.png';
-    var imgElement8 = '../img/irritacioncutanea.png';
-    var imgElement9 = '../img/gases.png';
+    var imgElement = 'assets/img/explosivos.png';
+    var imgElement2 = 'assets/img/corrosivometales.png'; 
+    var imgElement3 = 'assets/img/liquidosinflamables.png';
+    var imgElement4 = 'assets/img/peligroaspiracion.png';
+    var imgElement5 = 'assets/img/toxicidadaguda.png';
+    var imgElement6 = 'assets/img/liquidoscomburentes.png';
+    var imgElement7 = 'assets/img/medioambiente.png';
+    var imgElement8 = 'assets/img/irritacioncutanea.png';
+    var imgElement9 = 'assets/img/gases.png';
     fabric.Image.fromURL(imgElement, function(oImg) {
         oImg.left=30;
         oImg.top=0;
@@ -1123,18 +1125,18 @@ function pantalla30_canvas() {
   if ($("#content").width() <= 600) {
     $(".pantalla31_canvas").css('height','230px');
     var canvas = new fabric.Canvas('pantalla30_canvas');
-    var imgElement = '../img/cb8.png';
-    var imgElement2 = '../img/cb8.png'; 
-    var imgElement3 = '../img/cb8.png';
-    var imgElement4 = '../img/cb8.png';
-    var imgElement5 = '../img/cb8.png';
-    var imgElement6 = '../img/cb8.png';
-    var imgElement7 = '../img/cb8.png';
-    var imgElement8 = '../img/cb8.png';
-    var imgElement9 = '../img/cb8.png';
-    var imgElement10 = '../img/cb8.png';
-    var imgElement11 = '../img/cb8.png';
-    var imgElement12 = '../img/cb8.png';
+    var imgElement =  'assets/img/cb8.png';
+    var imgElement2 = 'assets/img/cb8.png'; 
+    var imgElement3 = 'assets/img/cb8.png';
+    var imgElement4 = 'assets/img/cb8.png';
+    var imgElement5 = 'assets/img/cb8.png';
+    var imgElement6 = 'assets/img/cb8.png';
+    var imgElement7 = 'assets/img/cb8.png';
+    var imgElement8 = 'assets/img/cb8.png';
+    var imgElement9 = 'assets/img/cb8.png';
+    var imgElement10 ='assets/img/cb8.png';
+    var imgElement11 ='assets/img/cb8.png';
+    var imgElement12 ='assets/img/cb8.png';
     fabric.Image.fromURL(imgElement, function(oImg) {
         oImg.left=192;
         oImg.top=22;
@@ -1461,18 +1463,18 @@ function pantalla30_canvas() {
     });
   }else{
     var canvas = new fabric.Canvas('pantalla30_canvas');
-    var imgElement = '../img/cb8.png';
-    var imgElement2 = '../img/cb8.png'; 
-    var imgElement3 = '../img/cb8.png';
-    var imgElement4 = '../img/cb8.png';
-    var imgElement5 = '../img/cb8.png';
-    var imgElement6 = '../img/cb8.png';
-    var imgElement7 = '../img/cb8.png';
-    var imgElement8 = '../img/cb8.png';
-    var imgElement9 = '../img/cb8.png';
-    var imgElement10 = '../img/cb8.png';
-    var imgElement11 = '../img/cb8.png';
-    var imgElement12 = '../img/cb8.png';
+    var imgElement =  'assets/img/cb8.png';
+    var imgElement2 = 'assets/img/cb8.png'; 
+    var imgElement3 = 'assets/img/cb8.png';
+    var imgElement4 = 'assets/img/cb8.png';
+    var imgElement5 = 'assets/img/cb8.png';
+    var imgElement6 = 'assets/img/cb8.png';
+    var imgElement7 = 'assets/img/cb8.png';
+    var imgElement8 = 'assets/img/cb8.png';
+    var imgElement9 = 'assets/img/cb8.png';
+    var imgElement10 ='assets/img/cb8.png';
+    var imgElement11 ='assets/img/cb8.png';
+    var imgElement12 ='assets/img/cb8.png';
     fabric.Image.fromURL(imgElement, function(oImg) {
         oImg.left=435;
         oImg.top=45;
