@@ -1227,7 +1227,7 @@ a.article:hover {
 }
 
 .img70{
-    width: 70%;
+    width: 90%;
     margin: auto auto;
     display: block;
 }
@@ -2229,5 +2229,48 @@ picture img {
       position: relative;
   }
 
+
+  .divisor1{
+    background:#ffc107;
+    border-radius: 15px;
+    width:30%;
+  }
+
+  @media only screen and (max-width: 800px){
+    .divisor1{
+        background:#ffc107;
+        border-radius: 15px;
+        width:100%;
+      }
+    
+  }
+
+
+  .IncompatibilidadTitulo{
+    background: #ffc107;
+    border-radius: 15px;
+    width: 30%;
+
+  }
+
+  @media only screen and (max-width: 800px){
+    .IncompatibilidadTitulo{
+        background: #ffc107;
+        border-radius: 15px;
+        width: 70%;
+    
+      }
+  }
+
+   @media only screen and (max-width: 800px){
+    .img-fluid2{
+        display: none;
+    }
+    
+  }
+
+.img-fluid2{
+
+}
 
 

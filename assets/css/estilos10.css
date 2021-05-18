@@ -42,7 +42,7 @@
   display: none !important;
 }
 #pantalla19_info1:hover,#pantalla19_info2:hover,#pantalla19_info3:hover,#pantalla19_info4:hover,#pantalla19_info5:hover{
-  background: #D8D8D8;
+  background: #FFFFFF;
 }
 
 #pantalla19_info1:hover > #pantalla19_text1::after{
