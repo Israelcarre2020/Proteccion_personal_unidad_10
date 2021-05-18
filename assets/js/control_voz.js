@@ -107,49 +107,49 @@ function controlAudioSlides(numeroSlide) {
             audioActual = new Audio('assets/voz/Sonido47_p16.mp3');
             break;            
         case 19:         
-            audioActual = new Audio('assets/voz/U14D083.mp3');
+            audioActual = new Audio('assets/voz/Sonido54_p17.mp3 ');
             break;
         case 20:
-            audioActual = new Audio('assets/voz/U14D095.mp3');
+            audioActual = new Audio('assets/voz/Sonido55_p18.mp3');
             break;            
         case 21:
-            audioActual = new Audio('assets/voz/U14D102.mp3');
+            audioActual = new Audio('assets/voz/Sonido56_ p19.mp3');
             break;                         
         case 22:
             intentosJuego=0;
-            audioActual = new Audio('assets/voz/U14D104.mp3');
+            audioActual = new Audio('assets/voz/Sonido57_p20.mp3 ');
             break;                         
         case 23:
-            audioActual = new Audio('assets/voz/U14D105.mp3');
+            audioActual = new Audio('assets/voz/Sonido58_ p21.mp3');
             break;                         
         case 24:
-            audioActual = new Audio('assets/voz/U14D109.mp3');
+            audioActual = new Audio('assets/voz/Sonido59_ p22.mp3');
             break;                         
         case 25:         
-            audioActual = new Audio('assets/voz/U14D119.mp3');
+            audioActual = new Audio('assets/voz/Sonido60_ p23.mp3');
             break;      
         case 26:
             /*$("#juegofv").html(htmljuego);
             iniciarJuegofv();*/
             $("#carouselActividadAprendizaje4").carousel(0);
-            audioActual = new Audio('assets/voz/U14D129.mp3');
+            audioActual = new Audio('assets/voz/Sonido61_ p24.mp3 ');
             break;   
         case 27:
-            audioActual = new Audio('assets/voz/U14D130.mp3');
+            audioActual = new Audio('assets/voz/Sonido62_p25.mp3');
             break; 
         case 28:
-            audioActual = new Audio('assets/voz/U14D134.mp3');
+            audioActual = new Audio();
             break;
         case 29:
             $(`.menu_actidades`).removeClass("active_actividad");
             $(`.menu_actidades4`).addClass("active_actividad");
-            audioActual = new Audio('assets/voz/U14D138.mp3');
+            audioActual = new Audio('assets/voz/Sonido63_ p26.mp3');
             break; 
         case 30:
-            audioActual = new Audio('assets/voz/U14D143.mp3');
+            audioActual = new Audio('assets/voz/Sonido69_ p27.mp3');
             break;  
         case 31:
-            audioActual = new Audio('assets/voz/U14D147.mp3');
+            audioActual = new Audio('assets/voz/Sonido70_ p28.mp3');
             break;    
         case 32:
 /*
@@ -157,10 +157,10 @@ function controlAudioSlides(numeroSlide) {
             $("select option").prop('selected', false);
             iniciarSelect();
             $("#carouselActividadAprendizaje5").carousel(0);*/
-            audioActual = new Audio('assets/voz/U14D149.mp3');
+            audioActual = new Audio('assets/voz/Sonido71_p29.mp3');
             break;    
         case 33:
-            audioActual = new Audio('assets/voz/U14D150.mp3');
+            audioActual = new Audio('assets/voz/Sonido72_ p30.mp3');
             break; 
         case 34:
             audioActual = new Audio('assets/voz/U14D154.mp3');
@@ -1136,12 +1136,22 @@ $('#carouselExampleIndicators4').on('slid.bs.carousel', function () {
     var numeroSlide = $('#carouselExampleIndicators4>div>div.active').index();
     var audioLocation;
 
+    
     switch (numeroSlide) {
         case 0:
-            audioLocation = 'assets/voz/U14D077.mp3';
+            audioLocation = 'assets/voz/Sonido63_ p26.mp3';
             break;
         case 1:
-            audioLocation = 'assets/voz/U14D078.mp3';
+            audioLocation = 'assets/voz/carousel_4_b.mp3';
+            break;  
+        case 2:
+            audioLocation = 'assets/voz/carousel_4_c.mp3';
+            break;
+        case 3:
+            audioLocation = 'assets/voz/carousel_4_d.mp3';
+            break; 
+        case 4:
+            audioLocation = '';
             break;   
         default:
             break;
@@ -1345,13 +1355,13 @@ $('#carouselExampleIndicators3').on('slid.bs.carousel', function () {
             audioLocation = 'assets/voz/Sonido47_p16.mp3';
             break;
         case 1:
-            audioLocation = 'assets/voz/';
+            audioLocation = 'assets/voz/carousel_3_b.mp3';
             break;  
         case 2:
-            audioLocation = 'assets/voz/';
+            audioLocation = 'assets/voz/carousel_3_c.mp3';
             break;
         case 3:
-            audioLocation = 'assets/voz/';
+            audioLocation = 'assets/voz/carousel_3_d.mp3';
             break; 
         case 4:
             audioLocation = '';
