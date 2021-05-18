@@ -18,6 +18,9 @@ function controlAudioSlides(numeroSlide) {
     if(audioActual)
         audioActual.pause();
 
+        $("#unmute").hide();
+        $("#mute").show();
+
     switch (numeroSlide) {
         case 1:
             audioActual = new Audio('assets/voz/sonido1_p1.mp3');
@@ -263,7 +266,36 @@ $("#resumeAudio").click(function() {
     $("#pauseAudio").show();
 });
 
+$("#mute").click(function() {
+
+    mute = !mute;
+
+    if (audioActual)
+        audioActual.volume = 0;
+
+    $("#mute").hide();
+    $("#unmute").show();
+
+});
+
+$("#unmute").click(function() {
+
+    mute = !mute;
+
+    if (audioActual)
+        audioActual.volume = 1;       
+
+    $("#unmute").hide();
+    $("#mute").show();
+
+});
+
 function reproducirAudio(audioLocation) {
+
+    if (mute)
+    audioActual.volume = 0;  
+
+    
     if (audioActual)
         audioActual.pause();    
 
