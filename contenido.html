@@ -354,9 +354,9 @@
                                        <div class="content">
                                           <!-- Tab links -->
                                           <div class="tabs">
-                                             <button id="tabObjetivos" class="tablinks tablinks1 active" data-country="Objetivos"><p data-title="Objetivos">  Objetivo</p></button>
-                                             <button class="tablinks tablinks1" data-country="Contenido"><p data-title="Contenido temático"> Contenido temático</p></button>
-                                             <button class="tablinks tablinks1" data-country="Metodologia"><p data-title="Metodología">  Metodología</p></button>
+                                             <button id="tabObjetivos" class="tablinks tablinks1 tablinks2 active" data-country="Objetivos"><p data-title="Objetivos">  Objetivo</p></button>
+                                             <button class="tablinks tablinks1 tablinks2" data-country="Contenido"><p data-title="Contenido temático"> Contenido temático</p></button>
+                                             <button class="tablinks tablinks1 tablinks2" data-country="Metodologia"><p data-title="Metodología">  Metodología</p></button>
                                           </div>
 
                                           <!-- Tab content -->
@@ -581,17 +581,17 @@
                                         <div class="row">
                                           <div class="col-md-12">
                                             <p>La función principal de los pictogramas es <span class="font-weight-bold">llamar la atención sobre el daño que el mal uso de una determinada sustancia</span> química o mezcla puede provocar a la salud o al medio ambiente. Los pictogramas invitan a leer las etiquetas y a conocer las recomendaciones de prudencia en el uso de los productos químicos antes, durante y después de su utilización. </p>
-                                            <p>A continuación, la definición de etiqueta y pictograma. Haga clic en cada botón.</p>
+                                            <p>A continuaciónSonido15_p5.mp3, la definición de etiqueta y pictograma. Haga clic en cada botón.</p>
                                           </div>
                                           <div class="col-md-6">
                                             <div class="d-flex justify-content-center">
-                                              <button class="button-3d" onclick="pantalla5_info(1)">ETIQUETADO</button>
+                                              <button class="button-3d tablinks2" data-country="etiquetado" onclick="pantalla5_info(1)">ETIQUETADO</button>
                                             </div>
                                             <div id="pantalla5_info1" class="p-3"></div>
                                           </div>
                                           <div class="col-md-6">
                                             <div class="d-flex justify-content-center">
-                                              <button class="button-3d" onclick="pantalla5_info(2)">PICTOGRAMA</button>
+                                              <button class="button-3d tablinks2" data-country="pictograma" onclick="pantalla5_info(2)">PICTOGRAMA</button>
                                             </div>
                                             <div id="pantalla5_info2" class="p-3"></div>
                                           </div>
@@ -2868,7 +2868,10 @@
                         <div class="btn-group controls-slide" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-cloud" id="prevSlide" data-placement="bottom"><span
                                     class="ti-angle-double-left"></span></button>
-                            <button type="button" class="btn btn-cloud"><span class="ti-control-pause"></span></button>
+                                    <button type="button" class="btn btn-cloud">
+                                      <span id="pauseAudio" class="ti-control-pause"></span>
+                                        <span id="resumeAudio" class="ti-control-play" style="display: none;"></span>
+                                      </button>
                             <button type="button" class="btn btn-cloud" id="nextSlide" data-placement="bottom"><span
                                     class="ti-angle-double-right"></span></button>
                         </div>

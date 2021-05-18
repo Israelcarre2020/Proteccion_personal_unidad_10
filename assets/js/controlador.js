@@ -587,6 +587,30 @@ $(document).ready(function () {
     var tabLinks2 = document.querySelectorAll(".tablinks2");
     var tabContent2 = document.querySelectorAll(".tabcontent2");
 
+    $(".tablinks2").click(function(){
+
+        var idTabs = $(this).parent().parent().parent().attr("id");        
+    
+        $(`#${idTabs}>div>.tabs>button`).removeClass("active");
+        $(`#${idTabs}>div>.wrapper_tabcontent>div`).removeClass("active");
+        
+        $(this).addClass("active");
+        $(`#${$(this).attr("data-country")}`).addClass("active");
+    
+        audioTabs($(this).attr("data-country"));
+    });
+    $(".tablinks2_hover").on("mouseover",function(){
+        var idTabs = $(this).parent().parent().parent().attr("id");        
+    
+        $(`#${idTabs}>div>.tabs>button`).removeClass("active");
+        $(`#${idTabs}>div>.wrapper_tabcontent>div`).removeClass("active");
+        
+        $(this).addClass("active");
+        $(`#${$(this).attr("data-country")}`).addClass("active");
+    
+        audioTabs($(this).attr("data-country"));
+    });
+
 
     tabLinks.forEach(function(el) {
        el.addEventListener("click", openTabs);
