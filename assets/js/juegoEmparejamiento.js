@@ -26,7 +26,9 @@ function init() {
 
     // Create the card slots
     for (var i = 1; i <= numbers.length; i++) {
-        $('<p class="btn btn-danger" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots').droppable({
+
+        if(i == 1){
+        $('<p class="btn btn-danger" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots1').droppable({
             accept: '#cardPile p',
             hoverClass: 'hovered',
             drop: handleCardDrop,
@@ -37,6 +39,76 @@ function init() {
                 ui.draggable.draggable('option','revert',true);
             }
         });
+
+        $(' <p class="justificado p_black" style="border: solid; border-radius: 15px; border-style: dashed; border-color: red;"><img src="assets/img/corrosivometales.png" class="img20"></p>').appendTo('#corrosivoJuego')
+    }
+
+    if(i == 2){
+        $('<p class="btn btn-danger" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots3').droppable({
+            accept: '#cardPile p',
+            hoverClass: 'hovered',
+            drop: handleCardDrop,
+            over: function(event, ui) {
+                ui.draggable.draggable('option','revert',false);
+            },
+            out: function(event, ui) {
+                ui.draggable.draggable('option','revert',true);
+            }
+        });
+
+        $('<p class="justificado p_black" style="border: solid; border-radius: 15px; border-style: dashed; border-color: red;"><img src="assets/img/toxicidadaguda.png" class="img20"></p></p>').appendTo('#toxicoJuego')
+
+    }
+
+    if(i == 3){
+        $('<p class="btn btn-danger" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots4').droppable({
+            accept: '#cardPile p',
+            hoverClass: 'hovered',
+            drop: handleCardDrop,
+            over: function(event, ui) {
+                ui.draggable.draggable('option','revert',false);
+            },
+            out: function(event, ui) {
+                ui.draggable.draggable('option','revert',true);
+            }
+        });
+
+        $('<p class="justificado p_black" style="border: solid; border-radius: 15px; border-style: dashed; border-color: red;"><img src="assets/img/liquidosinflamables.png" class="img20"></p></p>').appendTo('#fuegoJuego');
+    }
+
+    if(i == 4){
+        $('<p class="btn btn-danger" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots5').droppable({
+            accept: '#cardPile p',
+            hoverClass: 'hovered',
+            drop: handleCardDrop,
+            over: function(event, ui) {
+                ui.draggable.draggable('option','revert',false);
+            },
+            out: function(event, ui) {
+                ui.draggable.draggable('option','revert',true);
+            }
+        });
+
+        $('<p class="justificado p_black" style="border: solid; border-radius: 15px; border-style: dashed; border-color: red;"><img src="assets/img/explosivos.png" class="img20"></p></p>').appendTo('#explosionJuego');
+    }
+
+    if(i == 5){
+        $('<p class="btn btn-danger" style="width:100%">...</p>').data('number', i).appendTo('#cardSlots6').droppable({
+            accept: '#cardPile p',
+            hoverClass: 'hovered',
+            drop: handleCardDrop,
+            over: function(event, ui) {
+                ui.draggable.draggable('option','revert',false);
+            },
+            out: function(event, ui) {
+                ui.draggable.draggable('option','revert',true);
+            }
+        });
+
+        $('<p class="justificado p_black" style="border: solid; border-radius: 15px; border-style: dashed; border-color: red;"><img src="assets/img/irritacioncutanea.png" class="img20"></p></p>').appendTo('#irritanteJuego');
+    }
+
+        
     }
 
 }

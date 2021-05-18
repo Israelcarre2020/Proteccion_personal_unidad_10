@@ -527,14 +527,14 @@
                         </div>
                        </div>
                        <div id="unidad10-4-1" class="tab-pane" role="tabpanel">
-                        <div class="row">
+                        <div class="row" style="padding-right: 50px;">
                             <div class="col-md-12">
-                              <p class="font-weight-bold">Etiquetas y pictogramas 2</p>
+                              <p class="font-weight-bold">Etiquetas y pictogramas</p>
                             </div>
                             <div class="col-md-12">
                               <img class="imagenPeligroIcono" src="assets/img/Peligrofondo.png">
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-12" style="padding-left: 30px;">
                                 <div class="row">
                                   <div class="col-md-2">
                                     <img class="imagenPeligro" src="assets/img/Peligrofondo.png">
@@ -542,11 +542,24 @@
                                   <div class="col-md-10">
                                     <div class="row">
                                       <div class="col-md-12">
-                                        <p>La función principal de los pictogramas es <span class="font-weight-bold">llamar la atención sobre el daño que el mal uso de una determinada sustancia</span> química o mezcla puede provocar a la salud o al medio ambiente. Los pictogramas invitan a leer las etiquetas y a conocer las recomendaciones de prudencia en el uso de los productos químicos antes, durante y después de su utilización. </p>
-                                        <p>A continuación, la definición de etiqueta y pictograma. Haga clic en cada botón.</p>
+                                        <p style="text-align: justify;" >La característica principal de un pictograma es llamar la atención sobre el daño que un mal manejo de un producto químico y/o mezcla puede provocar a la salud o al medio ambiente. Los pictogramas indican la lectura de las etiquetas y el reconocimiento de las indicaciones de prudencia para la utilización de las sustancias químicas antes, durante y después de su utilización.</p>
+                                        
                                       </div>
-                                     
-                                     
+                                      <div class="col-md-12 parrafoConFondo">
+                                        <p style="text-align: justify;" >Los productos químicos son parte fundamental de nuestra vida. Muchos productos químicos, cuando los utilizamos correctamente, pueden contribuir enormemente para el mejoramiento de la calidad de vida, salud y bienestar en general, sin embargo, algunos son muy peligrosos, y pueden impactar negativamente nuestro estado de salud y el medio ambiente cuando no se utilizan de la forma correcta.
+                                        </p>
+                                        
+                                      </div>
+                                    </div>
+                                    <div class = "row" style= "margin-top: 2rem;">
+                                      <div class="col-md d-flex justify-content-end" >
+                                        <img src="assets/img/Imagen_1.png" style="height: 10rem;">
+                                      </div>
+                                      <div class="col-md d-flex justify-content-lg-start" style= "margin-top: 2rem;">
+                                        <p style="text-align: justify;" >Existen industrialmente muchos productos químicos y sustancias químicas, y la mayoría de ellos son peligrosos para la salud. Podemos hallarlos en forma de sustancias simples (Ej. ácido sulfúrico, amianto, gasolina, cloro,  etc.) o en forma de mezclas o emulsiones de dos o más productos.
+                                        </p>
+
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -719,24 +732,45 @@
                             <div class="col-md-12">
                               <p class="font-weight-bold">Tarjetas de emergencia:</p>
                             </div>
-                            <div class="col-md-6 p-3">
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <img class="img30" src="assets/img/documento.png">
+                            </div>
+                            <div class="row parrafoLateral1"">
+                                <div class="col d-flex justify-content-center">
+                                  <img class="imagenDocumento" src="assets/img/documento.png">
                                 </div>
-                                <div class="col-md-12">
-                                  <div class="p-3" style="background: #FDD04C; border-radius: 15px;">
+                                <div class="col">
+                                <div class="row d-flex justify-content-right"">
+
+                                  <div class="" style="background: #FDD04C; border-radius: 15px; padding: 1rem; margin-top: 1rem;">
                                     <p class="p_black">Una tarjeta de emergencia es un documento complementario de la ficha de datos de seguridad, que se elabora específicamente para ayudar en la atención primaria de emergencias durante el transporte de materiales químicos (pueden ser peligrosos o no).</p>
                                     <p class="p_black">Esta también suministra información sobre el producto, su fabricante, el proveedor y representante de la información en caso de emergencia. </p>
                                     <p class="p_black">Así como, identifica los peligros, la forma de protegerse, la reactividad y las medidas a tomar en caso de incendio, derrame o afectación a las personas.</p>
                                   </div>
                                 </div>
+                                <div class="row d-flex justify-content-center" >
+                                  <button  id="myImg2" class="btn botonVerImagen10-9" >Ver imagen</button>
+                                  
+                                  <img id="myImg" alt="Tarjeta de Emergencia" src="assets/img/tarjetaemergencia.png" alt="Snow" style="width:100%;max-width:300px; display: none" >
+
+                                  <!-- The Modal -->
+                                  <div id="myModal" class="modal">
+
+                                    <!-- The Close Button -->
+                                    <span class="close">&times;</span>
+
+                                    <!-- Modal Content (The Image) -->
+                                    <img class="modal-content" id="img01">
+
+                                    <!-- Modal Caption (Image Text) -->
+                                    <div id="caption"></div>
+                                  </div>
+                                </div>
                               </div>
+                              
                             </div>
-                            <div class="col-md-6 p-3">
+                            <!-- <div class="col-md-6 p-3">
                               <img class="img-fluid aumento" src="assets/img/tarjetaemergencia.png">
-                            </div>
-                          </div>
+                            </div> -->
+                          
                        </div>
                        <div id="unidad10-10" class="tab-pane" role="tabpanel">
                             <div class="row">
@@ -770,38 +804,46 @@
                                         <div id="cardPile"></div>
                                     </div>
                                     <div id="containerSlots" class="col-md-9">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div id="cardSlots"></div>
+                                       
+                                            <div class="row">
+
+                                                <div class="col">
+                                                  <div class="col">
+                                                    <div id="corrosivoJuego"></div>
+                                                    <div class="cardSlots" id="cardSlots1"></div>
+                                                  </div>
+                                                  <div class="col">
+                                                    <div id="toxicoJuego"></div>
+                                                    <div class="cardSlots" id="cardSlots3"></div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col">
+                                                  <div class="col">
+                                                    <div id="fuegoJuego"></div>
+                                                    <div class="cardSlots" id="cardSlots4"></div>
+                                                  </div>
+                                                  <div class="col">
+                                                    <div id="explosionJuego"></div>
+                                                    <div class="cardSlots" id="cardSlots5"></div>
+                                                  </div>
+                                                </div>
+
+                                                
+                                                <div class="col">
+                                                  <div class="col">
+                                                    <div id="irritanteJuego"></div>
+                                                    <div class="cardSlots row" id="cardSlots6"></div>
+                                                  </div>
+                                                </div>
+
+                                                
+                                               
+                                               
+                                      
+        
                                             </div>
-                                            <div class="col-md-8">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="justificado p_black" style="border: solid; border-radius: 15px; border-style: dashed; border-color: red;"><img src="assets/img/corrosivometales.png" class="img20"></p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="justificado p_black" style="border: solid; border-radius: 15px; border-style: dashed; border-color: red;"><img src="assets/img/toxicidadaguda.png" class="img20"></p></p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="justificado p_black" style="border: solid; border-radius: 15px; border-style: dashed; border-color: red;"><img src="assets/img/liquidosinflamables.png" class="img20"></p></p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="justificado p_black" style="border: solid; border-radius: 15px; border-style: dashed; border-color: red;"><img src="assets/img/explosivos.png" class="img20"></p></p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="justificado p_black" style="border: solid; border-radius: 15px; border-style: dashed; border-color: red;"><img src="assets/img/irritacioncutanea.png" class="img20"></p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                     
                                     </div>
                                 </div>                                                                                
                             </div>
@@ -2989,7 +3031,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="pantalla5_modal1" tabindex="-1" role="dialog" aria-labelledby="m_interruptor" aria-hidden="true">
+    <div class="modal fade" id="pantalla5_modal1" tabindex="5" role="dialog" aria-labelledby="m_interruptor" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content" id="m_interruptor">
                 <span class="mod-close" data-dismiss="modal" aria-hidden="true">

@@ -2,6 +2,28 @@ $(document).ready(pantalla7_canvas);
 $(document).ready(pantalla30_canvas);
 $(document).ready(pantalla21_img);
 
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var img2 = document.getElementById("myImg2");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img2.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = img.src;
+  captionText.innerHTML = img.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
 
 function pantalla5_info(num){
   var texto = "";
@@ -16,7 +38,7 @@ function pantalla5_info(num){
               <li><span class="font-weight-bold">Indicación de peligro</span></li>
             </ul>
             <div class="d-flex justify-content-center">
-              <button class="btn btn-primary" data-toggle="modal" data-target="#pantalla5_modal1">Ver imagen</button>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#pantalla5_modal1"><img src= "assets/img/imagen_1.png" style = "height: 3rem">Ver imagen</button>
             </div>
             `;
     $("#pantalla5_info1").html(texto);
@@ -536,7 +558,7 @@ function pantalla13_info(num){
               <img src="assets/img/oxidacion2.png" class="img-fluid">
             </div>
             <div class="col-md-4">
-              <img src="assets/img/oxidacion.jpg" class="img70">
+              <img src="assets/img/oxidacion.png" class="img70">
             </div>
           </div>
         </div>
