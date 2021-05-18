@@ -684,12 +684,12 @@ function pantalla16_tabla(num){
               <th class="font-weight-bold text-center" style="background: #F5C237;">LÍQUIDOS</th>
             </tr>
             <tr>
-              <td>Perclorato amónico (NH4ClO4).</td>
-              <td>H2 liquido + O2 liquido.</td>
+              <td>Perclorato amónico (NH<sub>4</sub>ClO<sub>4</sub>).</td>
+              <td>H<sub>2</sub> liquido + O<sub>2</sub> líquido.</td>
             </tr>
             <tr>
-              <td>Pólvora (NaNO3 o KNO3 ,+ S + C)</td>
-              <td>Kerosene + O2 liquido.</td>
+              <td>Pólvora (NaNO<sub>3</sub> o KNO<sub>3</sub> ,+ S + C)</td>
+              <td>Queroseno + O<sub>2</sub> líquido.</td>
             </tr>
             <tr>
               <td></td>
@@ -697,7 +697,7 @@ function pantalla16_tabla(num){
             </tr>
             <tr>
               <td></td>
-              <td>[ NH2-N(CH3)2] + N2O4</td>
+              <td>[ NH<sub>2</sub>-N(CH<sub>3</sub>)<sub>2</sub>] + N<sub>2</sub>O<sub>4</sub></td>
             </tr>
             `;
   }
