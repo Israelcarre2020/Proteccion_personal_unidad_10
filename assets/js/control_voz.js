@@ -52,6 +52,8 @@ function controlAudioSlides(numeroSlide) {
             audioActual = new Audio('assets/voz/Sonido7_p4.mp3');
             break;            
         case 5:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
                 $('.pasos-conceptos').hide();
                 $('.conceptos1').show().css({ 'opacity': 0, 'bottom': '-100px' }).animate({ 'opacity': '1', 'bottom': 0 }, 1000);;            
                 audioActual = new Audio('assets/voz/Sonido14_p5.mp3');
@@ -82,6 +84,8 @@ function controlAudioSlides(numeroSlide) {
             audioActual = new Audio('assets/voz/Sonido7_p4.mp3');
             break;            
         case 12:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades2`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido28_p11.mp3');
             break;
         case 13:      
@@ -109,7 +113,9 @@ function controlAudioSlides(numeroSlide) {
             $("#carouselActividadAprendizaje3").carousel(0);
             audioActual = new Audio('assets/voz/Sonido47_p16.mp3');
             break;            
-        case 19:         
+        case 19:     
+        $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades3`).addClass("active_actividad");    
             audioActual = new Audio('assets/voz/Sonido54_p17.mp3 ');
             break;
         case 20:
@@ -149,6 +155,8 @@ function controlAudioSlides(numeroSlide) {
             audioActual = new Audio('assets/voz/Sonido63_ p26.mp3');
             break; 
         case 30:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades4`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido69_ p27.mp3');
             break;  
         case 31:
@@ -174,6 +182,8 @@ function controlAudioSlides(numeroSlide) {
             audioActual = new Audio('assets/voz/Sonido73_ p31.mp3');
             break;   
         case 36:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades5`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/Sonido80_ p32.mp3');
             break;  
         case 37:
@@ -295,7 +305,7 @@ function reproducirAudio(audioLocation) {
     if (mute)
     audioActual.volume = 0;  
 
-    
+
     if (audioActual)
         audioActual.pause();    
 

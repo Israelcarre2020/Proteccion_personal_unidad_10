@@ -30,6 +30,9 @@ $(document).ready(function () {
     })
 
     $('#icon_actividades').off('click').on('click', function(){
+        
+        pause_audio();
+
         if($(".divcontenido").is(':visible')){
             $(".divcontenido").animate({ width: 'hide' }); 
             $(".menu-actividades").show(1000); 
@@ -40,6 +43,8 @@ $(document).ready(function () {
             $(".divcontenido").animate({ width: 'show' });
         }
     });
+
+    
     $('.link_actividad').off('click').on('click', function(){
         $(".menu-actividades").hide();
         setTimeout(function() { toggleOptions('.selector'); }, 10);
