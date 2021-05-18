@@ -571,8 +571,9 @@ function pantalla13_info(num){
               <div class="col-md-10 p-3">
                 <div class="row align-items-center" id="pantalla13_style">
                   <div class="col-md-7">
-                    <p class="p_black">La humedad es el agua que impregna un cuerpo o el agua en forma de vapor presente en el aire ambiental.</p>
-                    <p class="p_black">El contenido de humedad <span class="font-weight-bold">afecta a la capacidad de procesamiento, al período de conservación, a la usabilidad y a la calidad del producto.</span> La determinación precisa del contenido de humedad ocupa, por lo tanto, un papel clave para garantizar la calidad en muchas industrias, como la alimentaria, la farmacéutica y la química. En algunos productos, además, el contenido máximo admisible de humedad puede estar regulado conforme a las legislaciones nacionales e internacionales.</p>
+                    <p class="p_black">La humedad es la acumulación de agua que empapa un cuerpo o, también, el agua en su forma de vapor, que está presente en el medio ambiente.</p>
+                    <p class="p_black">El porcentaje de humedad afecta a la capacidad de procesamiento, el período de conservación, la usabilidad y la calidad del producto. La determinación precisa del porcentaje de humedad ocupa, por consiguiente, un papel muy importante para garantizar la calidad en muchísimas industrias, tales como las alimentarias, las farmacéuticas y las químicas. Y en algunos productos, además, el porcentaje máximo permisible de humedad puede estar normalizado conforme a las legislaciones nacionales e internacionales.</p>
+                    <p class="p_black">Algunas reacciones químicas requieren llevarse a cabo en una atmósfera libre de oxígeno y de humedad para impedir oxidaciones o descomposiciones de los reactivos y los productos. En estos casos la atmósfera interior del recipiente de reacción se reemplaza por un gas inerte como el argón o el nitrógeno.</p>
                   </div>
                   <div class="col-md-5 p-2">
                     <img src="assets/img/humedad.jpg" class="img-fluid">
@@ -588,10 +589,11 @@ function pantalla13_info(num){
               <div class="col-md-10 p-3">
                 <div class="row align-items-center" id="pantalla13_style">
                   <div class="col-md-7">
-                    <p class="p_black">El calor o entalpía de la <span class="font-weight-bold">reacción es un parámetro esencial para escalar con seguridad y correctamente los procesos químicos</span> y suele expresarse como entalpía molar en kJ/mol o como entalpía específica en kJ/kg o kJ/l.</p>
-                    <p class="p_black">El calor de la reacción es la energía que se libera o absorbe cuando las sustancias químicas se transforman en una reacción química.</p>
-                    <p class="p_black">Aunque la reacción puede ser exotérmica (liberación de calor) o endotérmica (absorción de calor), la mayoría de las reacciones llevadas a cabo en las industrias química y farmacéutica son exotérmicas.</p>
-                  </div>
+                    <p class="p_black">La energía o entalpía, es la porción de calor que en un procedimiento termodinámico se desprende o concentra del ambiente en el que se genera cuando sucede a un a presión constante. Ahora bien, la entalpía de la reacción es un criterio esencial para analizar con seguridad y correctamente los procesos químicos. </p>
+                    <p class="p_black">El calor de las reacciones es la energía que se libera o absorbe cuando las sustancias o productos químicos se transforman en una reacción química. Especifica el cambio del contenido de energía cuando los reactivos se convierten en productos. </p>
+                    <p class="p_black">Aun cuando la reacción puede ser exotérmica (liberación de calor) o endotérmica (absorción de calor), en la mayoría de las reacciones llevadas a cabo en los laboratorios químicos y farmacéuticos son exotérmicas. </p>
+                    <p class="p_black">Entre otras, el calor de la reacción es una de las propiedades termodinámicas más empleadas en el desarrollo químico, el escalado y la seguridad para analizar procesos del laboratorio a la fabricación.</p>
+                    </div>
                   <div class="col-md-5">
                     <div class="row p-2">
                       <div class="col-md-6">
