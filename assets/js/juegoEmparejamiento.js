@@ -1,5 +1,8 @@
 var correctCards = 0;
+
 var intentosEmparejamiento = 0;
+
+
 $(document).ready(function () { 
     
     init();
@@ -32,6 +35,7 @@ function init() {
             accept: '#cardPile p',
             hoverClass: 'hovered',
             drop: handleCardDrop,
+
             over: function(event, ui) {
                 ui.draggable.draggable('option','revert',false);
             },
@@ -154,7 +158,7 @@ function validarResultado(){
             denyButtonText: 'Terminar'
         }).then((result) => {
             if (result.isConfirmed) {
-                init();
+                location.reload();
             }
         })
     } else{
