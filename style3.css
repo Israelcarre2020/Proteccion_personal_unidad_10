@@ -1226,8 +1226,17 @@ a.article:hover {
     font-weight: bold;
 }
 
+#img_21{
+   width: 0.1rem;
+}
+
+.img71{
+    width: 5rem;
+   
+}
+
 .img70{
-    width: 90%;
+    width: 10rem;
     margin: auto auto;
     display: block;
 }

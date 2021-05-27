@@ -546,7 +546,7 @@ function pantalla13_info(num){
     if (num == 1) {
         info = `
         <div class="col-md-2">
-            <img src="assets/img/oxidacionmedio.png" width="70%">
+            <img src="assets/img/oxidacionmedio.png" width="80rem">
         </div>
         <div class="col-md-10 p-3">
           <div class="row align-items-center" id="pantalla13_style">
@@ -566,7 +566,7 @@ function pantalla13_info(num){
     }else if (num == 2) {
       info = `
               <div class="col-md-2">
-                  <img src="assets/img/humedadmedio.png" width="70%">
+                  <img src="assets/img/humedadmedio.png" width="80rem">
               </div>
               <div class="col-md-10 p-3">
                 <div class="row align-items-center" id="pantalla13_style">
@@ -584,7 +584,7 @@ function pantalla13_info(num){
     }else if (num == 3) {
       info = `
               <div class="col-md-2">
-                  <img src="assets/img/calormedio.png" width="70%">
+                  <img src="assets/img/calormedio.png" width="30rem">
               </div>
               <div class="col-md-10 p-3">
                 <div class="row align-items-center" id="pantalla13_style">
@@ -727,11 +727,11 @@ function pantalla20_info(){
   $("#pantalla20_info").html(info);
 }
 
-function pantalla21_img(){
+/* function pantalla21_img(){
     if ($("#content").width() <= 600) {
         $("#img_21").css('width','350px');
     }
-}
+} */
 
 function pantalla21_info(num){
     if ($("#content").width() <= 600) {
@@ -790,22 +790,22 @@ function pantalla21_info(num){
     }else{
         $(".pantalla21_color").css('background','#F7BE81');
         var img1 =`
-                  <img src="assets/img/partecalor.png">
+                  <img src="assets/img/partecalor.png" style="width: 20rem">
                   `;
         var img2 =`
-                  <img src="assets/img/partecalor.png">
-                  <img src="assets/img/parteoxigeno.png" style="position: absolute; top:0px; left:15px;">
+                  <img src="assets/img/partecalor.png" style="width: 20rem">
+                  <img src="assets/img/parteoxigeno.png" style="position: absolute; top:0px; left:15px;width: 20rem">
                   `;
         var img3 =`
-                  <img src="assets/img/partecalor.png">
-                  <img src="assets/img/parteoxigeno.png" style="position: absolute; top:0px; left:15px;">
-                  <img src="assets/img/partecombustible.png" style="position: absolute; left:15px;">
+                  <img src="assets/img/partecalor.png" style="width: 20rem">
+                  <img src="assets/img/parteoxigeno.png" style="position: absolute; top:0px; left:15px;width: 20rem">
+                  <img src="assets/img/partecombustible.png" style="position: absolute; left:15px;width: 20rem">
                   `;
         var img4 =`
-                  <img src="assets/img/partecalor.png">
-                  <img src="assets/img/parteoxigeno.png" style="position: absolute; top:0px; left:15px;">
-                  <img src="assets/img/partecombustible.png" style="position: absolute; left:15px;">
-                  <img src="assets/img/partefuego.png" style="position: absolute; left:15px; bottom: 15px;">
+                  <img src="assets/img/partecalor.png" style="width: 20rem">
+                  <img src="assets/img/parteoxigeno.png" style="position: absolute; top:0px; left:15px;width: 20rem">
+                  <img src="assets/img/partecombustible.png" style="position: absolute; left:15px;width: 20rem">
+                  <img src="assets/img/partefuego.png" style="position: absolute; left:15px; bottom: 15px;width: 20rem">
                   `;
         var info = "";
         if (num == 1) {
@@ -896,9 +896,9 @@ function pantalla25_info(num){
 }
 
 function pantalla26_info(num){
-  var img1 =`<img id="pantalla26_img1" src="assets/img/caracteristicas.png" class="pantalla26_img img-fluid">`;
-  var img2 =`<img id="pantalla26_img2" src="assets/img/dosis.png" class="pantalla26_img img-fluid">`;
-  var img3 =`<img id="pantalla26_img3" src="assets/img/organismo.png" class="pantalla26_img img-fluid">`;
+  var img1 =`<img id="pantalla26_img1" src="assets/img/caracteristicas.png" class="pantalla26_img img71">`;
+  var img2 =`<img id="pantalla26_img2" src="assets/img/dosis.png" class="pantalla26_img img71">`;
+  var img3 =`<img id="pantalla26_img3" src="assets/img/organismo.png" class="pantalla26_img img71">`;
   $("#pantalla26_info1").removeClass('col-md-3');
   $("#pantalla26_info2").removeClass('col-md-3');
   $("#pantalla26_info3").removeClass('col-md-3');

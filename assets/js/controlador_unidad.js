@@ -103,7 +103,7 @@ function seleccionMultiple() {
     } else{
         intentosSeleccionMultiple++;
 
-        if(intentosSeleccionMultiple >= 3){
+        if(intentosSeleccionMultiple >= 2){
             Swal.fire(
                 '¡Has superado el número de intentos!',
                 'Deberías revisar nuevamente el contenido relacionado a esta unidad de aprendizaje.',
