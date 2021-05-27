@@ -1146,7 +1146,7 @@ function pantalla27_info2(num){
 //cb8
 
 function pantalla30_canvas() {
-  if ($("#content").width() <= 600) {
+  if ($("#content").width() <= 1800) {
     $(".pantalla31_canvas").css('height','230px');
     var canvas = new fabric.Canvas('pantalla30_canvas');
     var imgElement =  'assets/img/cb8.png';
@@ -1487,7 +1487,7 @@ function pantalla30_canvas() {
     });
   }else{
     var canvas = new fabric.Canvas('pantalla30_canvas');
-    var imgElement =  'assets/img/cb8.png';
+    var imgElement =  'assets/img/cb2-0.png';
     var imgElement2 = 'assets/img/cb8.png'; 
     var imgElement3 = 'assets/img/cb8.png';
     var imgElement4 = 'assets/img/cb8.png';
@@ -1502,8 +1502,8 @@ function pantalla30_canvas() {
     fabric.Image.fromURL(imgElement, function(oImg) {
         oImg.left=435;
         oImg.top=45;
-        oImg.scaleToHeight(90);
-        oImg.scaleToWidth(90);
+        oImg.scaleToHeight(50);
+        oImg.scaleToWidth(50);
         oImg.selectable = false;
         oImg.hoverCursor= "pointer";
         canvas.add(oImg);

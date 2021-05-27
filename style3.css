@@ -1235,6 +1235,8 @@ a.article:hover {
    
 }
 
+
+
 .img70{
     width: 10rem;
     margin: auto auto;
@@ -2117,8 +2119,22 @@ picture img {
     background-color:#FFF2D1;
 }
 
+.img72{
+    width: 40rem;
+   
+}
+
+
 
 @media (max-width: 700px) {
+
+    .img72{
+        width: 20rem;
+       
+    }
+    
+    
+
     .parrafoLateral1{
         display: inline-block;
         
