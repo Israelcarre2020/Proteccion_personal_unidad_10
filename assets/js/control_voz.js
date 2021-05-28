@@ -1028,7 +1028,7 @@ function audioTabs(opcion) {
             console.log("eligiendo contenido");
             break;
         case 'Metodologia':
-            audioLocation = 'assets/voz/Sonido4_p2.mp3 ';
+            audioLocation = 'assets/voz/Sonido4_p2.mp3';
             break;
         case 'unidad_aprenderas':
             audioLocation = 'assets/voz/Sonido5_p3.mp3';
