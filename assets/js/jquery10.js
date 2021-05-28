@@ -899,12 +899,12 @@ function pantalla26_info(num){
   var img1 =`<img id="pantalla26_img1" src="assets/img/caracteristicas.png" class="pantalla26_img img71">`;
   var img2 =`<img id="pantalla26_img2" src="assets/img/dosis.png" class="pantalla26_img img71">`;
   var img3 =`<img id="pantalla26_img3" src="assets/img/organismo.png" class="pantalla26_img img71">`;
-  $("#pantalla26_info1").removeClass('col-md-3');
-  $("#pantalla26_info2").removeClass('col-md-3');
-  $("#pantalla26_info3").removeClass('col-md-3');
-  $("#pantalla26_info1").addClass('col-md-1');
-  $("#pantalla26_info2").addClass('col-md-1');
-  $("#pantalla26_info3").addClass('col-md-1');
+  $("#pantalla26_info1").removeClass('col');
+  $("#pantalla26_info2").removeClass('col');
+  $("#pantalla26_info3").removeClass('col');
+  $("#pantalla26_info1").addClass('col');
+  $("#pantalla26_info2").addClass('col');
+  $("#pantalla26_info3").addClass('col');
   $(".pantalla26_img").css('width','70%');
   $("#pantalla26_info"+num).removeClass('col-md-1');
   $("#pantalla26_info"+num).addClass('col-md-3');

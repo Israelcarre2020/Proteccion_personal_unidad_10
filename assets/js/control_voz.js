@@ -18,8 +18,8 @@ function controlAudioSlides(numeroSlide) {
     if(audioActual)
         audioActual.pause();
 
-        $("#unmute").hide();
-        $("#mute").show();
+       /*  $("#unmute").hide();
+        $("#mute").show(); */
 
     switch (numeroSlide) {
         case 1:
@@ -336,7 +336,7 @@ $("#resumeAudio").click(function() {
     $("#pauseAudio").show();
 });
 
-$("#mute").click(function() {
+/* $("#mute").click(function() {
 
     mute = !mute;
 
@@ -346,9 +346,9 @@ $("#mute").click(function() {
     $("#mute").hide();
     $("#unmute").show();
 
-});
+}); */
 
-$("#unmute").click(function() {
+/* $("#unmute").click(function() {
 
     mute = !mute;
 
@@ -359,11 +359,11 @@ $("#unmute").click(function() {
     $("#mute").show();
 
 });
-
+ */
 function reproducirAudio(audioLocation) {
 
-    if (mute)
-    audioActual.volume = 0;  
+  /*   if (mute)
+    audioActual.volume = 0;   */
 
 
     if (audioActual)
